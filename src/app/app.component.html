@@ -9,6 +9,18 @@
 </div>
 <br />
 
+<div style="text-align: center;" *ngIf="isBlank && !isLoading">
+  <br>
+  <br>
+  <p>This tool can help you look through your mint transactions!</p>
+  <p>To use:</p>
+  <p><b>1.</b> Go to <a href="https://mint.intuit.com" target="_blank">Mint</a>, click "Transactions" tab</p>
+  <img src="assets/transactions.png" />
+  <p><b>2.</b> Scroll to bottom and export all transactions to csv file</p>
+  <img src="assets/export.png" />
+  <p><b>3.</b> Upload csv file by clicking upload button up top!</p>
+</div>
+
 <div *ngIf="isLoading" style="text-align: center;">
     <img style="margin: auto; float: center;" src="assets/loading.gif" />
     <!-- <div *ngIf="showEmojiCount">
